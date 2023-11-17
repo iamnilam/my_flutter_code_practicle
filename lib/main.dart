@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ws_code_practicle/appBar/appBar.dart';
+import 'package:ws_code_practicle/appBar/bottomnav/bottomNav.dart';
+import 'package:ws_code_practicle/appBar/sliverAppbar.dart';
+import 'package:ws_code_practicle/appBar/tabs_example.dart';
 import 'package:ws_code_practicle/custome_btn/custome_btn.dart';
 import 'package:ws_code_practicle/listviewbuilder/listview.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -10,9 +14,12 @@ class ClipperDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CustomButton(),
+      //home: CustomButton(),
+     // home:  MySliverAppBar(),
+      //home: TabExample(),
+      home: BottomNavigationBarScreen(),
     );
   }
 }
